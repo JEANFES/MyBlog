@@ -1,0 +1,167 @@
+:root{
+    --color-primary-0: #AA3939;
+    --color-primary-1: #FFAAAA;
+    --color-primary-2: #D46A6A;
+    --color-primary-3: #801515;
+    --color-primary-4: #550000;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Finlandica', sans-serif;
+}
+
+header{
+    width: 100%;
+    min-width: 320px;
+    height: 130px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #f5534b white;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #f5534b;
+    border-radius: 20px;
+    border: 3px solid white;
+  }
+
+.header-section{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    justify-content: end;
+    background-color: white;
+    /* background-image: linear-gradient( 178.2deg,  rgba(118,8,23,1) 10.9%, rgba(158,12,33,1) 62.6% ); */
+}
+
+.header-icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-icons img{
+    width: 100%;
+    height: 2.5rem;
+}
+
+
+.header-nav{
+    height: 80px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    text-decoration: none;
+    align-items: center;
+    background-color: black;
+}
+
+.header-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.header-nav img{
+    width: 6rem;
+    height: 6rem;
+    vertical-align: middle;
+}
+
+.nav-miblog{
+    margin-left: 50px;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.nav-sobremi{
+    justify-self: flex-end;
+    margin-right: 30px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+}
+
+.main-index{
+    display: grid;
+    height: calc(100vh - 130px);
+    min-width: 320px;
+    grid-template-columns: 1fr 4fr 1fr;
+    background-image: url('../assets/img/pexels-lalesh-aldarwish-194511.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container{
+    height: 350px;
+    display: grid;
+    grid-column: 2;
+    justify-items: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.home-main-text{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-align: center;
+}
+.home-main-button{
+    width: 110px;
+    height: 50px;
+    border-radius: 20px;
+    align-self: flex-end;
+    padding: 7px;
+    background-color: #f5534b;
+}
+.home-main-button a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.home-main-button:hover{
+    background-color: var(--color-primary-3);
+}
+
+
+@media (max-width: 650px){
+    html{
+        font-size: 50%;
+    }
+}    
+
+@media (max-width: 450px){
+     html{
+        font-size: 46%;
+    }
+    .nav-miblog{
+        margin-left: 20px;
+    }
+}
+
+
